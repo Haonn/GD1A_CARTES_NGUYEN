@@ -1,0 +1,15 @@
+1/ 
+
+_____________________
+	MONSTRE	
+_____________________
+- _pv : int
+- _scoreAttaque : int 
+- _nom : string
+- _epuise : bool
+_____________________
++ getNom() : string
++ getPv () : int
++ get scoreAttaque() : int
++ getEtat() : bool
++ attaque() : void 
