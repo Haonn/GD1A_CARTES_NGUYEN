@@ -10,6 +10,8 @@ _____________________
 _____________________
 + getNom() : string
 + getPv () : int
-+ get scoreAttaque() : int
++ getScoreAttaque() : int
 + getEtat() : bool
-+ attaque() : void 
++ attaque(Monstre &cible) : void 
++ perdVie(degats) : void 
++ affiche() : void 
