@@ -1,4 +1,5 @@
 #include <string>
+
 class Monstre{
     private :
     int _pv;

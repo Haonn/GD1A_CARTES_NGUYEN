@@ -5,7 +5,7 @@ class Mage{
     private : 
     int _vie;
     std::string _nom;
-    std::vector<Monstre> _invMonstres();
+    std::vector<Monstre> _invMonstres;
     
 
     public :
