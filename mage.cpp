@@ -8,7 +8,7 @@ int Mage::getVie(){
     return _vie;
 }
 
-vector<Monstre> getInvMonstre(){
+vector<Monstre> Mage::getInvMonstre(){
     return _invMonstres;
 }
 
@@ -17,7 +17,7 @@ void nouvMonstre(){
 
 }
 
-void attaqueMonstre(Mage &mageAdverse){
+void Mage::attaqueMonstre(Mage &mageAdverse){
     int choixMonstreAJouer;
     cout<<"Avec quel monstre souhaitez-vous attaquer ?"<<endl;
     for (int i=0; i<=_invMonstres.size();i++){
