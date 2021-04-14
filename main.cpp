@@ -1,4 +1,5 @@
 #include "monstre.cpp"
+#include "mage.cpp"
 #include <iostream>
 #include <string>
 using namespace std;

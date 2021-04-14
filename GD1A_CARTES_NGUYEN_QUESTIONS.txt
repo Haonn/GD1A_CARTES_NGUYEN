@@ -15,3 +15,46 @@ _____________________
 + attaque(Monstre &cible) : void 
 + perdVie(degats) : void 
 + affiche() : void 
+_____________________
+
+2/
+
+_____________________
+	MAGE
+_____________________
+- _vie : int
+- _nom : string 
+- _invMonstres : vector
+_____________________
++ getNom() : string
++ getVie () : int 
++ getInvMonstre() : vector
++ nouvMonstre() : void 
++ attaqueMonstre(Mage &mageAdverse) : void 
+_____________________
+	A
+	*
+	V
+	|
+	|
+_____________________
+	MONSTRE	
+_____________________
+- _pv : int
+- _scoreAttaque : int 
+- _nom : string
+- _epuise : bool
+_____________________
++ getNom() : string
++ getPv () : int
++ getScoreAttaque() : int
++ getEtat() : bool
++ attaque(Monstre &cible) : void 
++ perdVie(degats) : void 
++ affiche() : void 
+_____________________
+ 
+4/ Pour permettre une pioche aléatoire on peut générer un nombre aléatoire entre 0 et 100 à chaque pioche
+et dire que si le nombre généré est entre 0 et 70 on obtient un nouveau monstres aux statistiques aléatoires
+(avec un maximum possible), si le nombre est entre 71 et 85 on obtient un sort de dégât et si le nombre est 
+compris entre 86 et 100 la carte générée sera un sort de soin. 
