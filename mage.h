@@ -14,4 +14,5 @@ class Mage{
     std::vector<Monstre> getInvMonstre();
     void nouvMonstre();
     void attaqueMonstre(Mage &mageAdverse);
+    Mage();
 };

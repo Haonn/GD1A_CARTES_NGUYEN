@@ -30,9 +30,9 @@ void Mage::attaqueMonstre(Mage &mageAdverse){
     int choixMonstreAAttaquer;
     cout<<"Quel monstre adverse souhaitez-vous attaquer ?"<<endl;
     vector<Monstre> invMonstresAdverses = mageAdverse.getInvMonstre();
-    for (int i=0; i<=invMonstresAdverses.size();i++){
+    for (int i=0; i<= (invMonstresAdverses.size());i++){
         cout << "Monstre adverse numéro" << i << " : " <<  endl ;
-        _invMonstresAdverses[i].affiche();
+        invMonstresAdverses[i].affiche();
         cout << " " << endl; 
         cout << " " << endl; 
     }
@@ -53,5 +53,10 @@ void Mage::nouvMonstre(){
     cout <<"Quel est le score d'attaque du nouveau monstre ?"<< endl;
     cin >> scoreAttaqueNouvMonstre;
     Monstre monstre1(scoreAttaqueNouvMonstre, pvNouvMonstre, nomNouvMonstre);
-    _invMonstres.push_back ( monstre1 )
+    _invMonstres.push_back ( monstre1 );
+}
+Mage::Mage(){
+    _vie = 50;
+    _nom = "mageAdverse";
+    
 }
