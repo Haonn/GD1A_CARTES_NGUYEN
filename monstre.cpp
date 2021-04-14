@@ -33,4 +33,5 @@ Monstre::Monstre(){
     _nom = "monstre générique";
     _epuise = false; 
 }
+Monstre::Monstre(int atk, int pv, std::string nom) : _pv(pv), _scoreAttaque(atk), _nom(nom), _epuise(false){}
 
